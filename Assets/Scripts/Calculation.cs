@@ -6,6 +6,8 @@ using System;
 
 public class Calculation : MonoBehaviour
 {
+
+
     [SerializeField]
     TMP_Text text;
 
@@ -30,13 +32,6 @@ public class Calculation : MonoBehaviour
         }
 
         text.text = text.text + numberToAdd.ToString();
-    }
-
-    public void Clear()
-    {
-        text.text = "0";
-        orders.Clear();
-        values.Clear();
     }
 
     public void AddDot()
